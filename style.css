@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color:black;
+    --second-bg-color: goldenrod  ;
+    --text-color: white;
+    --main-color:goldenrod;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    /* font-size: 1.6rem; */
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    /* overflow-x: hidden; */
+}
+.header{
+    align-items: center;
+    padding: 1.5rem 10%;
+    background-color: var(--bg-color);
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: left;
+    z-index: 100;
+    display: flex;
+}
+.logo{
+    color: var(--main-color);
+    font-size: 3rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding-top: 2rem;
+}
+.navbar a{
+    color: var(--text-color);
+    font-size: 2.25rem;
+    margin-left: 5rem;
+    cursor: pointer;
+}
+.navbar a:hover, .navbar a.active{
+    color: var(--main-color);
+}
+#menu-icon{
+    display: none;
+    font-size: 3.5rem;
+    font: var(--main-color);
+
+}
+section{
+    padding: 10rem 10% 3rem;
+    min-height: 100vh;
+    font: var(--main-color);
+}
+.home{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.home-img img{
+    width: 40vh;
+    max-width: 700px;
+    margin-top: 2rem;
+}
+.home-content{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+}
+.home-content h1{
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.home-content p{
+    font-size: 2rem;
+}
+.social-media a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    font-size: 3rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0; 
+}
+.social-media a:hover{
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
